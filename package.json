@@ -1,0 +1,25 @@
+{
+  "name": "000Proiect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "convert-excel-to-json": "^1.7.0",
+    "excel": "^1.0.1",
+    "exceljs": "^4.3.0",
+    "express": "^4.17.1",
+    "html-to-text": "^8.0.0",
+    "json-to-table": "^4.2.1",
+    "multer": "^1.4.3",
+    "table": "^6.7.1",
+    "xls-to-json": "^2.1.0",
+    "xlsx": "^0.17.2",
+    "xlsx-to-json": "^0.3.0"
+  }
+}

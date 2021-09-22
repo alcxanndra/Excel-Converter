@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- xlsx.js (C) 2013-present  SheetJS http://sheetjs.com -->
+<!-- vim: set ts=2: -->
+<html>
+  <head>
+    <title>Convert Excel to .txt</title>
+    <link rel="stylesheet" href="assets/css/sheetjs.css">
+  </head>
+  <body>
+    <script src="assets/vendor/alertify.js"></script>
+    <script src="//unpkg.com/canvas-datagrid/dist/canvas-datagrid.js"></script>
+
+    <div id="body">
+      <div id="left">
+          <br />
+      <div id="drop">Drop a file here</div>
+      <form id        =  "uploadForm"
+    enctype   =  "multipart/form-data"
+    action    =  "upload"
+    method    =  "post"
+>
+<input type="file" id="file" name="file" value=""/>
+        <br /><br /><br /><br /><br /><br /><br />
+      <h3> Preview worksheet:</h3>
+      <div id="buttons"></div>
+    </div>
+    <div id="right">
+      <div id="header">
+        <pre id="out"></pre>
+        <h2>Convert Excel to .txt</h2>
+        <p>
+          Drop a spreadsheet in the box to the left to see a preview.<br/>
+        </p>
+        <table id="tt">
+          <tr>
+          </tr>
+        </table>
+      </div>
+
+      <div id="grid">
+        <h3>Choose the sheets and columns to convert:</h3>
+        <div id="cboxes">
+          <label for="shrange">1) Sheets range (use <b>name of the sheets</b> separated by comma, ex: <b>Sheet1, Sheet2</b>)</label>
+          <input type="text" id="shrange" name="shrange" value=""><br><br>
+          <label for="colrange">2) Columns range (use <b>columns' letter index</b> separated by comma, ex: <b>A, B, C</b> or <b> B, D</b> etc.):</label>
+          <input type="text" id="colrange" name="colrange" value="">
+          <br /><br />
+          <input type="submit" value="Convert file" name="submit"> 
+          <br /><br />
+        </form>
+
+        </div>
+      </div>
+      <div id="footnote">
+      </div>
+    </div>
+
+    <script src="assets/js/shim.js"></script>
+    <script src="//unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="assets/js/dropsheet.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/vendor/spin.js"></script>
+
+  </body>
+</html>
