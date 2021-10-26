@@ -126,8 +126,6 @@
                      * Remove 'A', 'B', ... from table header (use column original names)
                      */
                     temp = reader.utils.sheet_to_json(reader.utils.json_to_sheet(temp, {skipHeader:true}));
-                    // temp = reader.utils.sheet_to_html(reader.utils.json_to_sheet(temp, {skipHeader:true}));
-
 
                     /**
                      * Convert json to string and append to .txt file in custom format 
